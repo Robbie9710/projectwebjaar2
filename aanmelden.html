@@ -3,40 +3,53 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Overzichtspagina</title>
+    <title>Aanmelden/Log in</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
     <header>
-
+        <h1>99 Verhalen</h1>
         <nav>
             <a href="overzichtspagina.html">Home</a>
-            <a href="Filteren">Filteren</a>
-            <a href="">Aanmelden</a>
+            <input type="range">
+            <a href="aanmelden.html">Aanmelden</a>
         </nav>
 
     </header>
-    <fieldset>
-        <p>Meldt je nu aan!</p>
-        <label for="voornaam">Voornaam:</label>
-        <input type="text" placeholder="Voornaam">
-        <label for="achternaam">Achternaam:</label>
-        <input type="text" placeholder="Achternaam">
-        <label for="email">Email:</label>
-        <input type="email" placeholder="email@mail.com" required>
-        <label for="telefoon">telefoonnummer:</label>
-        <input type="tel" placeholder="0612345678" pattern="[0][6][0-9]{8}">
-        <label for="wachtwoord">Wachtwoord:</label>
-        <input type="password" placeholder="Wachtwoord" required>
-        <button type="submit">Aanmelden</button>
-    </fieldset>
-    <fieldset>
-        <p>Of log hier in als je al een account hebt</p>
-        <label for="email">Email:</label>
-        <input type="email" placeholder="email@mail.com" required>
-        <label for="wachtwoord">Wachtwoord:</label>
-        <input type="password" placeholder="Wachtwoord" required>
-        <button type="submit">Log in</button>
-    </fieldset>
+    <form action="overzichtspagina.html">
+        <fieldset>
+            <legend>Meldt je nu aan!</legend>
+            <label>Voornaam:
+                <input type="text" placeholder="Voornaam">
+            </label>
+            <label>Achternaam:
+                <input type="text" placeholder="Achternaam">
+            </label>
+            <label>Email:
+                <input type="email" placeholder="email@mail.com" required>
+            </label>
+            <label>telefoonnummer:
+                <input type="tel" placeholder="0612345678" pattern="[0][6][0-9]{8}">
+            </label>
+            <label>Wachtwoord:
+                <input type="password" placeholder="wachtwoord" required>
+            </label>
+            <button type="submit">Aanmelden</button>
+           </fieldset>
+    </form>
+
+    <form action="overzichtspagina.html">
+        <fieldset>
+            <legend>Of log hier in als je al een account hebt</legend>
+            <label>Email:
+                <input type="email" placeholder="email@mail.com" required>
+            </label>
+            <label>Wachtwoord:
+                <input type="password" placeholder="Wachtwoord" required>
+            </label>
+            <button type="submit">Log in</button>
+            </fieldset>
+    </form>
 
 </body>
